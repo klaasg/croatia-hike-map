@@ -23,15 +23,20 @@ function createMap() {
             zoom: window.innerWidth > 900 ? 7 : 6
         }
     );
+    L.control.scale().addTo(map);
+
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> | Source on <a href="https://github.com/klaasg/croatia-hike-map" target="_blank" rel="noopener noreferrer">GitHub</a>'
     }).addTo(map);
+
     return map;
 }
 
 function addMarkers(map, data) {
     for (let point of data) {
-        L.marker([point.coord.lat, point.coord.lon]).addTo(map);
+        let marker = L.marker([point.coord.lat, point.coord.lon], {
+            icon: goldIcon
+        }).addTo(map);
     }
 }
 

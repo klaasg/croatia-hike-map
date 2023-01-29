@@ -58,15 +58,6 @@ function createMap() {
     return map;
 }
 
-// When an image is loaded in a popup, we want to update it so the popup autoPans
-// uses img.onload
-function updatePopup() {
-    if (map._popup && !map._popup.updated) {
-        map._popup.updated = true;
-        map._popup.update();
-    }
-}
-
 function makePopup(point, startDate) {
     let options = {};
     let content = "";
@@ -82,7 +73,7 @@ function makePopup(point, startDate) {
     if (point.image) {
         options.minWidth = window.innerWidth > 750 ? 550 : 250;
         options.maxWidth = window.innerWidth > 750 ? 550 : 250;
-        content += `<a class="popup-image" href="img/${point.image}" target="_blank"><img src="img/${point.image}" onload="updatePopup()"></img></a>`;
+        content += `<a class="popup-image" href="img/${point.image}" target="_blank"><img src="img/${point.image}"></img></a>`;
     }
     options.autoPanPadding = L.point(25, 25);
 

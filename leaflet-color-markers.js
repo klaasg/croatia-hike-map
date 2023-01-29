@@ -1,7 +1,7 @@
 // https://github.com/pointhi/leaflet-color-markers
 
 var blueIcon = new L.Icon({
-    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-blue.png',
+    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-2x-blue.png',
     //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/images/marker-shadow.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -10,7 +10,7 @@ var blueIcon = new L.Icon({
 });
 
 var goldIcon = new L.Icon({
-    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-gold.png',
+    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-2x-gold.png',
     //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/images/marker-shadow.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -19,7 +19,7 @@ var goldIcon = new L.Icon({
 });
 
 var redIcon = new L.Icon({
-    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-red.png',
+    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-2x-red.png',
     //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/images/marker-shadow.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -28,7 +28,7 @@ var redIcon = new L.Icon({
 });
 
 var greenIcon = new L.Icon({
-    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-green.png',
+    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-2x-green.png',
     //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/images/marker-shadow.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -37,7 +37,7 @@ var greenIcon = new L.Icon({
 });
 
 var orangeIcon = new L.Icon({
-    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-orange.png',
+    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-2x-orange.png',
     //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/images/marker-shadow.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -46,7 +46,7 @@ var orangeIcon = new L.Icon({
 });
 
 var yellowIcon = new L.Icon({
-    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-yellow.png',
+    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-2x-yellow.png',
     //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/images/marker-shadow.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -55,7 +55,7 @@ var yellowIcon = new L.Icon({
 });
 
 var violetIcon = new L.Icon({
-    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-violet.png',
+    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-2x-violet.png',
     //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/images/marker-shadow.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -64,7 +64,7 @@ var violetIcon = new L.Icon({
 });
 
 var greyIcon = new L.Icon({
-    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-grey.png',
+    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-2x-grey.png',
     //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/images/marker-shadow.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -73,7 +73,7 @@ var greyIcon = new L.Icon({
 });
 
 var blackIcon = new L.Icon({
-    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-black.png',
+    iconUrl: 'https://github.com/pointhi/leaflet-color-markers/raw/234813b7dffa11eee06f41618e1f5752c6b7bd8d/img/marker-icon-2x-black.png',
     //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/images/marker-shadow.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],

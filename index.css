@@ -1,6 +1,7 @@
 noscript {
     color: red;
 }
+
 html, body {
     width: 100%;
     height: 100%;
@@ -14,5 +15,13 @@ html, body {
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+.popup-image {
+    width: inherit;
+}
+
+.popup-image img {
+    width: inherit;
 }
 

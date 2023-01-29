@@ -35,7 +35,7 @@ function parseTypes(text) {
             types[split[0]] ={
                 textNL: split[1],
                 textEN: split[2],
-                icon: split[3]
+                color: split[3]
             }
         } catch {}
     }
@@ -64,15 +64,15 @@ function makePopup(point, startDate) {
     // const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
     // point.date.toLocaleDateString(language, dateOptions)
     if (language.includes("nl")) {
-        content += `<h4>Dag ${(point.date-startDate) / (1000*3600*24) + 1}: ${types[point.type].textNL}</h4>`;
+        content += `<h4>Dag ${(point.date-startDate) / (1000*3600*24) + 1}: <span style="color: ${types[point.type].color};">${types[point.type].textNL}</span></h4>`;
         content += `<p>${point.noteNL || ""}</p>`;
     } else {
-        content += `<h4>Day ${(point.date-startDate) / (1000*3600*24) + 1}: ${types[point.type].textEN}</h4>`;
+        content += `<h4>Dag ${(point.date-startDate) / (1000*3600*24) + 1}: <span style="color: ${types[point.type].color};">${types[point.type].textEN}</span></h4>`;
         content += `<p>${point.noteEN || ""}</p>`;
     }
     if (point.image) {
-        options.minWidth = window.innerWidth > 750 ? 550 : 250;
-        options.maxWidth = window.innerWidth > 750 ? 550 : 250;
+        options.minWidth = window.innerWidth > 750 ? 500 : 250;
+        options.maxWidth = window.innerWidth > 750 ? 500 : 250;
         content += `<a class="popup-image" href="img/${point.image}" target="_blank"><img src="img/${point.image}"></img></a>`;
     }
     options.autoPanPadding = L.point(25, 25);
@@ -84,7 +84,7 @@ function addMarkers(map, data, types) {
     let startDate = data[0].date;
     for (let point of data) {
         let marker = L.marker([point.coord.lat, point.coord.lon], {
-            icon: eval(`${types[point.type].icon}Icon`)
+            icon: eval(`${types[point.type].color}Icon`)
         }).addTo(map);
         marker.bindPopup(makePopup(point, startDate));
     }
@@ -95,6 +95,10 @@ function drawMap() {
         map = createMap();
         addMarkers(map, data, types);
     }
+}
+
+if (!language.includes('nl')) {
+    document.title = "My hike through Croatia";
 }
 
 fetch("data.csv")

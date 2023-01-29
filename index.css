@@ -9,6 +9,15 @@ html, body {
     padding: 0;
 }
 
+#infobox {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 10px;
+    z-index: 9000;
+    font: bold 18px 'Lucida Console', Monaco, monospace;
+}
+
 #map {
     position: absolute;
     top: 0;

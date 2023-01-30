@@ -14,6 +14,10 @@
     <!-- Leaflet default marker icon in different colors.
          https://github.com/pointhi/leaflet-color-markers/ -->
     <script src="leaflet-color-markers.js"></script>
+
+    <!-- Flags -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+
 </head>
 <body>
     <noscript>JavaScript moet ingeschakeld zijn om deze webpagina te bekijken</noscript>
@@ -21,6 +25,7 @@
     <div id="infobox">
         <a href="https://klaasgoethals.be">Klaas Goethals</a>
         | <a href="https://cldt.hr/en" target="_blank" rel="noopener noreferrer">CLDT</a>
+        | <a id="switch-to-EN" onclick="switchLanguage('en-GB')"><span class="fi fi-gb"></span></a><a id="switch-to-NL" onclick="switchLanguage('nl_BE')"><span class="fi fi-be"></span></a>
     </div>
 
     <div id="map"></div>

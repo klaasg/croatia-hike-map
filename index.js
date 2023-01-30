@@ -3,6 +3,26 @@ var data = undefined;
 var types = undefined;
 var language = navigator.language;
 
+function showLanguage() {
+    if (language.includes("nl")) {
+        document.title = "Mijn trektocht door Kroatië";
+        document.getElementById('switch-to-NL').style.display = "none";
+        document.getElementById('switch-to-EN').style.display = "inline";
+    } else {
+        document.title = "My hike through Croatia";
+        document.getElementById('switch-to-NL').style.display = "inline";
+        document.getElementById('switch-to-EN').style.display = "none";
+    }
+}
+
+function switchLanguage(lang) {
+    // Set global var
+    language = lang;
+    drawMap();
+
+    showLanguage();
+}
+
 function parseData(text) {
     let data = [];
     for (let line of text.split('\n')) {
@@ -92,14 +112,16 @@ function addMarkers(map, data, types) {
 
 function drawMap() {
     if (data && types) {
+        if (map !== undefined) {
+            map.off();
+            map.remove();
+        }
         map = createMap();
         addMarkers(map, data, types);
     }
 }
 
-if (!language.includes('nl')) {
-    document.title = "My hike through Croatia";
-}
+showLanguage();
 
 fetch("data.csv")
     .then(res => res.text())

@@ -16,6 +16,7 @@ html, body {
     margin: 10px;
     z-index: 9000;
     font: bold 18px 'Lucida Console', Monaco, monospace;
+    text-shadow: 0 0 5px white;
 }
 
 #map {
